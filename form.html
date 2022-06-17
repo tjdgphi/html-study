@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>html - form</title>
+    <meta charset="utf-8">
+</head>    
+<body>
+<h1>Form</h1>
+<h2>- 문자 입력</h2> <!--항목별로 나누고 싶지만 li태그는 귀찮을 것 같다...필요한가....-0-;-->
+<p>
+    <form action="http://localhost/login.php"> <!--사용자가 입력한 정보를 ""로 전송하는 태그-->
+        <p>ID : <input type="text" name="id"></p>
+        <p>PW : <input type="password" name="pw"></p>
+        <!--input 입력하는 값의 유형 name 서버로 전송될때 이름의 값으로 전송됨-->
+        <p><input type="submit"></p> <!--사용자가 입력한 데이터를 폼 액션에 적은 서버의 주소로 전송할 수 있는 제출 버튼 value 버튼의 내용을 바꿔줌 기본은 제출, 누르면 페이지가 바뀜-->
+    </form>
+    <form action="">
+        <p>안녕하세유~<br><input type="text" name="id" value="반가와요~~^^"></p>
+        <!--value=기본적으로 텍스트 상자안에 보여지는 값-->
+        <p>요기다가 적어유~<br><textarea id="" cols="30" rows="10">뭐라고 적을거에유~?</textarea></p>
+        <!--cols 입력할 수 있는 글자 수 만큼 사이즈가 커짐 rows 입력할 수 있는 줄만큼 커짐
+            텍스트에어리어 태그 사이에 텍스트를 입력하면 밸류값이 됨(속성을 입력하지 않아도 됨)-->
+        <p><input type="button" value="이건 누르던가 말던가 시붏알." onclick="alert('버튼을 누르다니~ 오늘도 행복한 하루 보내세용')"></p>
+        <!--value를 입력하지 않으면 아무 내용 없는 박스가 됨 -->
+        <p><input type="reset"></p>
+    </form>
+</p>
+<h2>- dropdown list 혹은 콤보 박스</h2>
+<p>
+    오늘 나의 기분
+    <select name="mind"> <!--select 선택할 수 있는 태그로 옵션을 묶어줘야 함 -->
+        <option>기분좋음</option>
+        <option>거지같음</option>
+        <option>짜증남</option>
+        <option>화남</option> <!--value 서버로 보낼때의 값,컴퓨터가 보기 좋은 입력값 설정-->
+    </select>
+    <input type="submit"><br>
+    오늘 나의 기분을 여러개 선택해보시오
+    <select name="mind2"> <!--name 콤보 박스가 어떤 이름으로 서버로 전송될지-->
+        <option>행복함</option>
+        <option>기분좋음</option>
+        <option>살만함</option>
+        <option>퇴사하고 싶다</option>
+    </select>
+    <input type="submit">
+    컨트롤을 누르라는데 맥북에서는 안되나봐~^^
+</p>
+<h2>- 라디오, 단일 선택</h2>
+<p> * 티셔츠 색상 <br>
+    붉은색<input type="radio" name="color"> <!--name값이 같은 것들끼리 묶어주면 다중선택 안됨-->
+    푸른색<input type="radio" name="color">
+    그 사이 3초가 짧은 시간<input type="radio" name="color">
+<br> * 핏 유형 <br>
+    슬림<input type="radio" name="color2">
+    레귤러<input type="radio" name="color2" checked> <!--checked 기본적으로 체크되어있도록 설정-->
+    오버사이즈<input type="radio" name="color2">
+</p>
+<h2>- 체크 박스, 다중 선택</h2>
+<p> 오늘 한 운동을 체크해보시오 <br>
+    스쿼트 <input type="checkbox" name="pt">
+    데드리프트 <input type="checkbox" name="pt">
+    워킹런지 <input type="checkbox" name="pt">
+    랫풀다운<input type="checkbox" name="pt">
+</p>
+</body>
+</html>

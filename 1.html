@@ -5,16 +5,33 @@
     <meta charset="utf-8">
 </head>
 <body>
-<h1><a href="index.html" target="_blank">WEB</A></h1>
-<ol>
+<h1><a href="index.html" target="_blank">WEB</a></h1>
+<ol> 
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
     <li><a href="3.html">JavaScript</a></li>
 </ol><br>
 <h2><u><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="w3">HTML</a></u></h2>
-<p>Sayzie has loved cephalopods since before they were cool and collects photos of all the kittens she has seen on her travels. </p>
-<p>The experience gave me a deep appreciation for how assiduously historians must work, especially when excavating the stories of women who dwelled on the economic and cultural margins.</p> 
-<p>Judges who try to interpret the law as well as possible or to identify the positions that are most consistent with their policy preferences have to work hard, but at least the work of the legal or attitudinal judge ends there.</p>
-<img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" width="300">
-<p>There, with Lou Reed music playing and a couple of happy goats grazing nearby, he painstakingly hand-cut the intricate stencils he used to create four large-format paintings for the show and painted several smaller pieces that were thematically connected. </p>
+<ul> <!--ul 항목이 같은 것 들 끼리 묶을 수 있는(그룹핑을 할 수 있는) 리스트 태그-->
+    <li>img</li>
+        <p><img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" width="300"></p>
+        <!--p 어디서부터 어디까지가 한 단락인지 묶여서 의미있는 태그가 됨. 단점 : 한 단락이기땜에 정해진 양만 줄바꿈이 됨, 이 부분을 보완할 수 있는게 css-->
+        <p>Sayzie has loved cephalopods since before they were cool <br>and collects photos of all the kittens she has seen on her travels. </p>
+        <p><strong>Judges who try to interpret the law as well as possible or to identify the positions that are most consistent with their policy preferences have to work hard, <br>but at least the work of the legal or attitudinal judge ends there.</strong></p> <!--strong 굵게-->
+        <p><u>There, with Lou Reed music playing and a couple of happy goats grazing nearby, <br>he painstakingly hand-cut the intricate stencils <br>he used to create four large-format paintings for the show <br>and painted several smaller pieces that were thematically connected.</u></p> <!--u 밑줄-->
+    <li><a href="form.html">form</a></li><br>
+    <li>font</li><br>
+    <li>table</li><br> <!--지금은 잘 사용하지 않는 기능이라고 함-->
+        <table border="2">
+            <thead>
+                <th>일정</th> <th>날짜</th> <th>시간</th>
+            </thead>
+            <tr>
+                <td>운동</td> <td>6월 15일</td> <td>13:00</td>
+            </tr>
+            <tr>
+                <td>공부</td> <td>6월 18일</td> <td>19:00</td>
+            </tr>
+        </table>
+</ul>
 </body></html>
